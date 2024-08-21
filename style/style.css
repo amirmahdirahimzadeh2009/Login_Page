@@ -1,0 +1,66 @@
+@font-face {
+  font-family: bold-italic;
+  src: url(../fonts/ComicNeue-BoldItalic.ttf);
+}
+@font-face {
+  font-family: italic;
+  src: url(../fonts/ComicNeue-Italic.ttf);
+}
+@font-face {
+  font-family: light-italic;
+  src: url(../fonts/ComicNeue-LightItalic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  height: 100vh;
+}
+h1 {
+  font-family: bold-italic;
+  font-size: 64px;
+  color: #ccc;
+}
+.login-container {
+  font-family: italic;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-container input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.login-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+#message {
+  color: red;
+}
